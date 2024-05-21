@@ -1,0 +1,73 @@
+@use "../presets/index" as *;
+@use "../mixins/mixins-media" as *;
+
+%text-shadow {
+  text-shadow: 0 0 5px $color-black, 0 0 10px $color-black, 0 0 20px $color-black;
+}
+
+%btn-style {
+  transition: all 0.5s;
+
+  color: white;
+  border-color: rgba($color-accent, 0.3);
+  background-color: $color-accent-light;
+}
+
+%row {
+  margin-right: -$gap-sm;
+  margin-bottom: -$gap;
+  margin-left: -$gap-sm;
+}
+
+%item {
+  margin-bottom: $gap;
+  padding-right: $gap-sm;
+  padding-left: $gap-sm;
+}
+
+%caption {
+  padding: 9px;
+
+  @include xs-min {
+    font-size: 1.5rem;
+  }
+  @include xs {
+    font-size: 1.25rem;
+  }
+}
+
+%title {
+  overflow: hidden;
+
+  margin: 0;
+
+  text-align: center;
+  white-space: nowrap; /* Текст не переносится */
+  text-overflow: ellipsis; /* Добавляем многоточие */
+
+  color: $color-black;
+
+  font-family: $font-main;
+  font-size: $font-size;
+  font-weight: 700;
+}
+
+%thumbnail {
+  margin-bottom: 0;
+
+  transition: all 1s;
+
+  img {
+    width: 100%;
+    margin: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+
+    h3 {
+      color: $color-white;
+    }
+  }
+}

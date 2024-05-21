@@ -1,0 +1,53 @@
+@use "../presets/index" as *;
+@use "../mixins/index" as *;
+
+.films-video {
+  position: relative;
+
+  a {
+    text-decoration: none;
+
+    color: inherit;
+  }
+
+  &__well {
+    text-align: center;
+
+    font-size: 1.2em;
+
+    &-badge {
+      white-space: nowrap;
+
+      &:not(:last-of-type) {
+        margin-right: $gap;
+      }
+    }
+
+    &-info {
+      margin-left: 5px;
+
+      font-size: 0.8em;
+    }
+  }
+}
+
+.film-comments {
+  &-name {
+    margin-left: 7.25px;
+  }
+
+  &-item:first-of-type {
+    margin-bottom: $gap * 2;
+  }
+}
+
+.write-comment {
+  &__btn {
+    @extend %btn-style;
+
+    &:hover {
+      color: white;
+      background-color: $color-accent;
+    }
+  }
+}

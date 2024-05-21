@@ -1,0 +1,129 @@
+@use "../presets/index" as *;
+@use "../mixins/index" as *;
+
+.main {
+  margin-bottom: 80px;
+
+  .site-search {
+    margin-bottom: $gap * 3;
+  }
+  .site-login {
+    margin-bottom: $gap * 4;
+  }
+}
+
+.new-films {
+  &-row {
+    @extend %row;
+  }
+
+  &-item {
+    @extend %item;
+
+    &__thumbnail {
+      @extend %thumbnail;
+    }
+
+    &__caption {
+      @extend %caption;
+    }
+
+    &__title {
+      @extend %title;
+    }
+  }
+}
+
+.top-week {
+  &-row {
+    @extend %row;
+  }
+
+  &-item {
+    @extend %item;
+
+    &__thumbnail {
+      @extend %thumbnail;
+    }
+
+    &__caption {
+      @extend %caption;
+    }
+
+    &__title {
+      @extend %title;
+    }
+  }
+}
+
+.film-news {
+  &-item {
+    &__caption {
+      @include xs-min {
+        font-size: 1.5rem;
+      }
+      @include xs {
+        font-size: 1.25rem;
+      }
+      a {
+        transition: all 0.5s;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      a {
+        color: $color-accent;
+      }
+    }
+
+    &:hover {
+      .film-news-item__btn {
+        color: $color-white;
+        background-color: $color-accent;
+      }
+
+      .film-news-item__thumbnail {
+        background-color: $color-accent;
+      }
+    }
+
+    &__thumbnail {
+      margin-bottom: 0;
+
+      transition: all 0.5s;
+
+      img {
+        width: 100%;
+        margin: 0 !important;
+      }
+    }
+
+    &__text {
+      margin-bottom: 10px;
+
+      text-align: justify;
+
+      color: #333333;
+
+      font-family: $font-main;
+      font-size: $font-size;
+    }
+
+    &__btn {
+      margin-bottom: 30px;
+
+      @extend %btn-style;
+
+      a {
+        text-decoration: none;
+
+        color: inherit;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

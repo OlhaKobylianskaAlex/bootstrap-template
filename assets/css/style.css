@@ -1,0 +1,882 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.header-logo__title, .header-logo__description {
+  text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000;
+}
+
+.write-comment__btn, .film-news-item__btn {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: white;
+  border-color: rgba(223, 138, 19, 0.3);
+  background-color: #f0ad4f;
+}
+
+.new-films-row, .top-week-row {
+  margin-right: -7.5px;
+  margin-bottom: -15px;
+  margin-left: -7.5px;
+}
+
+.new-films-item, .top-week-item {
+  margin-bottom: 15px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+
+.new-films-item__caption, .top-week-item__caption {
+  padding: 9px;
+}
+
+.new-films-item__title, .top-week-item__title {
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  /* Текст не переносится */
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  /* Добавляем многоточие */
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.new-films-item__thumbnail, .top-week-item__thumbnail {
+  margin-bottom: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.new-films-item__thumbnail img, .top-week-item__thumbnail img {
+  width: 100%;
+  margin: 0;
+}
+.new-films-item__thumbnail:hover, .top-week-item__thumbnail:hover, .new-films-item__thumbnail:focus, .top-week-item__thumbnail:focus {
+  background-color: #df8a13;
+}
+.new-films-item__thumbnail:hover h3, .top-week-item__thumbnail:hover h3, .new-films-item__thumbnail:focus h3, .top-week-item__thumbnail:focus h3 {
+  color: #ffffff;
+}
+
+.navbar-inverse {
+  margin-bottom: 0;
+  border-color: transparent;
+  background-color: #191919;
+}
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+  background-color: #165690;
+}
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #053159;
+}
+.navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #517ba2;
+}
+.navbar-inverse .navbar-header {
+  text-align: center;
+}
+.navbar-inverse .navbar-toggle {
+  float: none;
+  margin-right: 0;
+}
+
+.panel-info {
+  margin-bottom: 30px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.panel-info:last-of-type {
+  margin-bottom: 0;
+}
+.panel-info > .panel-heading {
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  border: none;
+  background-color: #df8a13;
+  font-size: 1.25rem;
+}
+
+.panel-body {
+  border: 1px solid #d5d5d5;
+  border-radius: 0 0 0 4px;
+  background-color: #f4f4f4;
+}
+
+.input-lg,
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
+}
+
+.thumbnail {
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.embed-responsive {
+  border: 1px solid #d5d5d5;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.well {
+  border-color: #d5d5d5;
+  background-color: #f4f4f4;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  overflow-y: scroll;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #165690;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color: #df8a13;
+}
+
+h1 {
+  position: relative;
+  font-family: "PT Serif", serif;
+}
+h1::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
+}
+
+h2 {
+  position: relative;
+  padding-left: 45px;
+  font-family: "PT Serif", serif;
+}
+h2::before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  content: "";
+  border-top: 3px solid #f0ad4f;
+}
+h2::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
+}
+
+h3 {
+  margin-top: 0;
+  color: #23527c;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+section {
+  overflow: hidden;
+}
+
+.header {
+  margin-bottom: 80px;
+}
+
+.header-logo {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #232323;
+  background-image: url(../img/header-bg.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.header-logo__title {
+  display: block;
+  padding-left: 0.33em;
+  letter-spacing: 0.33em;
+  color: #df8a13;
+  font-family: "PT Serif", serif;
+}
+.header-logo__description {
+  display: block;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  font-size: 1.15rem;
+}
+
+.main {
+  margin-bottom: 80px;
+}
+.main .site-search {
+  margin-bottom: 45px;
+}
+.main .site-login {
+  margin-bottom: 60px;
+}
+
+.film-news-item__caption a {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.film-news-item:hover a, .film-news-item:focus a {
+  color: #df8a13;
+}
+.film-news-item:hover .film-news-item__btn {
+  color: #ffffff;
+  background-color: #df8a13;
+}
+.film-news-item:hover .film-news-item__thumbnail {
+  background-color: #df8a13;
+}
+.film-news-item__thumbnail {
+  margin-bottom: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.film-news-item__thumbnail img {
+  width: 100%;
+  margin: 0 !important;
+}
+.film-news-item__text {
+  margin-bottom: 10px;
+  text-align: justify;
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+}
+.film-news-item__btn {
+  margin-bottom: 30px;
+}
+.film-news-item__btn a {
+  text-decoration: none;
+  color: inherit;
+}
+.film-news-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.films-video {
+  position: relative;
+}
+.films-video a {
+  text-decoration: none;
+  color: inherit;
+}
+.films-video__well {
+  text-align: center;
+  font-size: 1.2em;
+}
+.films-video__well-badge {
+  white-space: nowrap;
+}
+.films-video__well-badge:not(:last-of-type) {
+  margin-right: 15px;
+}
+.films-video__well-info {
+  margin-left: 5px;
+  font-size: 0.8em;
+}
+
+.film-comments-name {
+  margin-left: 7.25px;
+}
+.film-comments-item:first-of-type {
+  margin-bottom: 30px;
+}
+
+.write-comment__btn:hover {
+  color: white;
+  background-color: #df8a13;
+}
+
+.sidebar {
+  margin-bottom: 80px;
+}
+
+.vertical-slider {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.vertical-slider__image {
+  width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 9.99999999px;
+  border: none;
+}
+.user-login__tabs a {
+  padding: 14px 5px 12px !important;
+  color: #d5d5d5;
+  border: none !important;
+  background-color: transparent !important;
+}
+.user-login__tabs .active a {
+  color: #ffffff !important;
+}
+
+.site-news-item {
+  position: relative;
+  clear: both;
+  min-height: 84.99999999px;
+}
+.site-news-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.site-news-item:not(:last-child)::after {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  width: calc(100% - 84.99999999px);
+  height: 1px;
+  content: "";
+  background-color: #d5d5d5;
+}
+.site-news-item:hover a {
+  color: #df8a13;
+}
+.site-news-item:hover .thumbnail {
+  background-color: #df8a13;
+}
+.site-news-item__thumbnail {
+  float: left;
+  width: 75px;
+  margin: 0 9.99999999px 9.99999999px 0;
+}
+.site-news-item__image {
+  width: 100%;
+}
+.site-news-item__title {
+  margin-bottom: 0.5em;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  height: 50px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-line-clamp: 2;
+}
+.site-news-item__date {
+  text-align: right;
+  color: #6f6f6f;
+  font-size: 0.8rem;
+}
+.site-news-item__link {
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.top-films__body {
+  padding-right: 0;
+  padding-left: 0;
+}
+.top-films__list {
+  margin-bottom: 0;
+}
+.top-films__item {
+  margin-right: -1px;
+  margin-left: -1px;
+  padding-right: 50px;
+  color: #165690 !important;
+  background-color: transparent;
+}
+.top-films__item:hover, .top-films__item:focus {
+  color: white !important;
+  border-color: #df8a13;
+  background-color: #df8a13 !important;
+}
+.top-films__item:hover .badge, .top-films__item:focus .badge {
+  background-color: #232323;
+}
+.top-films__item:first-child {
+  border-top: none;
+  border-radius: 0;
+}
+.top-films__item:last-child {
+  border-bottom: none;
+  border-radius: 0;
+}
+.top-films__badge {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.footer {
+  padding-top: 45px;
+  background-color: #232323;
+}
+.footer-title {
+  color: #d5d5d5;
+}
+.footer a {
+  color: inherit;
+}
+.footer a:hover, .footer a:focus {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer ul {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.footer li {
+  margin: 0;
+  list-style: none;
+  color: #6f6f6f;
+}
+.footer-author {
+  margin: 20px auto;
+  text-align: center;
+  color: #d5d5d5;
+}
+@media (min-width: 576px) {
+  .new-films-item__caption, .top-week-item__caption {
+    font-size: 1.5rem;
+  }
+  h1 {
+    margin: -9.99999999px 0 1em 0;
+    font-size: 3rem;
+  }
+  h2 {
+    margin: 60px 0 45px 0;
+    font-size: 2.5rem;
+  }
+  h2::before {
+    margin: 10px 0 0 0;
+  }
+  .header-logo__title {
+    font-size: 3.5rem;
+  }
+  .film-news-item__caption {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav > li > a {
+    border-radius: 4px;
+  }
+  .navbar-left > li {
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-right > li {
+    margin: 5px 0 5px 5px;
+  }
+}
+@media (max-width: 991.8px) {
+  .left-sidebar {
+    margin-bottom: 80px;
+  }
+  .user-login {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767.8px) {
+  .navbar-inverse .navbar-nav > li > a {
+    text-align: center;
+  }
+  .navbar-left {
+    margin-bottom: 0;
+  }
+  .navbar-right {
+    margin-top: 0;
+  }
+}
+@media (max-width: 575.8px) {
+  .new-films-item__caption, .top-week-item__caption {
+    font-size: 1.25rem;
+  }
+  h1 {
+    margin: 0 0 1em 0;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  h2 {
+    margin: 45px 0 30px 0;
+    font-size: 1.75rem;
+  }
+  h2::before {
+    margin: 7px 0 0 0;
+  }
+  .header-logo__title {
+    font-size: 2.5rem;
+  }
+  .film-news-item__caption {
+    font-size: 1.25rem;
+  }
+}

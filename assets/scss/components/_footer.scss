@@ -1,0 +1,44 @@
+@use "../presets/index" as *;
+@use "../mixins/index" as *;
+
+.footer {
+  padding-top: $gap * 3;
+
+  background-color: $color-dark;
+
+  &-title {
+    color: $color-gray;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+
+      color: $color-white;
+    }
+  }
+
+  ul {
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+
+    list-style: none;
+
+    color: $color-gray-dark;
+  }
+
+  &-author {
+    margin: 20px auto;
+
+    text-align: center;
+
+    color: $color-gray;
+  }
+}

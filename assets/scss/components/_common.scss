@@ -1,0 +1,117 @@
+@use "../presets/index" as *;
+@use "../mixins/index" as *;
+
+html {
+  font-size: $font-size;
+}
+
+body {
+  overflow-y: scroll;
+
+  font-family: $font-main;
+  font-size: $font-size;
+}
+
+a {
+  color: $color-primary;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    color: $color-accent;
+  }
+}
+
+h1 {
+  position: relative;
+
+  font-family: $font-header;
+
+  @include xs-min {
+    margin: -$gap-md 0 1em 0;
+
+    font-size: 3rem;
+  }
+  @include xs {
+    margin: 0 0 1em 0;
+
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  &::after {
+    position: absolute;
+
+    width: 100%;
+    margin: 0.85em 0 0 $gap;
+
+    content: "";
+
+    border-bottom: 3px solid $color-accent-light;
+  }
+}
+
+h2 {
+  position: relative;
+
+  padding-left: 45px;
+
+  font-family: $font-header;
+
+  @include xs-min {
+    margin: 60px 0 45px 0;
+
+    font-size: 2.5rem;
+  }
+  @include xs {
+    margin: 45px 0 30px 0;
+
+    font-size: 1.75rem;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+
+    width: $gap * 2;
+
+    content: "";
+
+    border-top: 3px solid $color-accent-light;
+
+    @include xs-min {
+      margin: 10px 0 0 0;
+    }
+    @include xs {
+      margin: 7px 0 0 0;
+    }
+  }
+
+  &::after {
+    position: absolute;
+
+    width: 100%;
+    margin: 0.85em 0 0 $gap;
+
+    content: "";
+
+    border-bottom: 3px solid $color-accent-light;
+  }
+}
+
+h3 {
+  margin-top: 0;
+
+  color: #23527c;
+
+  font-family: $font-main;
+  font-weight: 400;
+}
+
+.hidden {
+  @include visually-hidden;
+}
+
+section {
+  overflow: hidden;
+}
